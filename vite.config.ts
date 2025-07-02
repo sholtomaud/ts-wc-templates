@@ -24,9 +24,10 @@ export default defineConfig(({ command }) => ({
     },
   },
   server: {
-    port: 3000,
+    port: 5173,
+    host: true, // Ensure it listens on all interfaces
     strictPort: true,
-    open: true,
+    open: true, // This is for local dev, ignored in headless CI
   },
   preview: {
     port: 4000,

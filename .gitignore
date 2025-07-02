@@ -81,3 +81,9 @@ dist/
 
 # Domains
 DOMAIN_NAME_QUOTES.md
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

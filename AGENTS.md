@@ -38,9 +38,11 @@ The following commands MUST be run and MUST pass before pushing any commit to Gi
 1. **Install Dependencies:** `npm ci`
 2. **Run Type Check:** `npm run type-check` 
 3. **Run Lint:** `npm run lint` 
-4. **Run Tests:** `npm test` (uses Vitest)
+4. **Run Tests:** `npm test` (uses Vitest for unit/integration tests)
+5. **Run E2E Tests:** `npm run test:e2e` (uses Playwright for end-to-end tests)
 
 **ALL of these must complete successfully with zero errors before any git push.**
+**Note:** E2E tests (`npm run test:e2e`) will also be run in the CI pipeline.
 
 ### Build Command
 
